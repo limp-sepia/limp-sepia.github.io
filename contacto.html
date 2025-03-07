@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="Images/qotsa_icon.jfif">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/d30d4a0a43.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="qotsa_style.css">
+
+    <title>QOTSA</title>
+
+    <style>
+        @font-face {
+            font-family:kartex;
+            src: url(kartex/Kartex.ttf);
+}
+        @font-face {
+            font-family:clorin;
+            src: url(clorin/Clorin-Regular.otf);
+}
+        *{
+            font-family: clorin;
+        }
+
+        .navbar a{
+            color: rgb(212, 41, 84);
+        }
+        
+        .navbar a:visited{
+            color: rgb(212, 41, 84);
+        }
+        .navbar a:hover{
+            color: rgb(0, 208, 255);
+        }
+        a.navbar-brand{
+            font-family: kartex;
+        }
+                
+        footer{
+            position:relative;
+            clear: both;
+            text-align: center;
+}
+        span{
+            word-spacing: 10px;
+        }
+        .fa-brands{
+            color: rgb(212, 41, 84);
+        }
+        .fa-brands:hover{
+            background-color:  rgb(212, 41, 84);
+            color: aliceblue;
+        }
+        h1{
+            font-family: kartex;
+            text-align: center;
+            color:rgb(212, 41, 84);
+            padding: 65px 10px;
+        }
+        section{
+            text-align: center;
+        }
+        h5{
+            color: rgb(212, 41, 84);
+        }
+        .card a img{
+            width: 200px;
+        }
+        .card a{
+            text-align: left;
+            transition: all .50s;
+            z-index: 2;
+        }
+        .card a{
+            text-decoration: none;
+        }
+        .card a:hover{
+            color: white;
+            background-color:rgb(212, 41, 84);
+        }
+        .row{
+            padding: 15px;
+        }
+        #spane{
+            font-family: kartex;
+            color:rgb(212, 41, 84);
+            padding: 15px;
+        }
+        form{
+            padding: 20px;
+        }
+        .form_ctt{
+            padding: 5px;
+            border: 10px solid rgb(211, 40, 83);
+            border-style:double;
+        }
+        h2{
+            font-family: kartex;
+            text-align: center;
+            color: rgb(211, 40, 83);
+        }
+    </style>
+  </head>
+  <body>
+   
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+
+          <img src="Images/qotsa_logo.jpg" alt="qotsa_logo" width="50" class="d-inline-block align-top">
+        QOTSA</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Eventos.html">EVENTOS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle dropdown-toggle-danger" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  DISCOGRAFIA
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Discografia_1.html">Ultimas novidades</a></li>
+                  <li><a class="dropdown-item" href="Discografia_2.html">Albuns</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item disabled" style="color: grey;" tabindex="-1" aria-disabled="true" href="#">EM CURSO <i class="fa-solid fa-person-digging"></i></a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+              <button class="btn btn-outline-info" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row">
+        <div class="col-sm-5">
+            <h4><span id="spane">Contacte-nos!</span>  <br><br>
+                Se gostou do nosso trabalho, pode subscrever e ficar a saber das novidades, álbuns, digressões e muito mais.
+                Muito obrigado por nos ter escolhido e por ter visitado o nosso sítio Web.            
+                </h4>
+        </div>
+        <div class="col-sm-7">
+            
+            <form class="form_ctt">
+                <h2>SUBSCREVA-SE</h2>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control form-control-sm" id="floatingInput" placeholder="E-mail">
+                    <label for="floatingInput">E-mail</label>
+                   </div>
+                   <div class="form-floating mb-3"> 
+                   <input type="text" class="form-control form-control-sm" id="floatingPassword" placeholder="Username">
+                    <label for="floatingPassword">Username</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Comenta-nos</label>
+                  </div><br>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Gostaria de receber notificações sobre eventos e notícias
+                        sobre <i style="font-family: kartex;color: rgb(211, 40, 83);">QOTSA</i>?</label>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Gostaria de receber notificações sobre ofertas e produtos 
+                        relacionados com a marca <i style="font-family: kartex;color: rgb(211, 40, 83);">QOTSA</i>?</label>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Gostaria de receber notificações sobre como ser o seu próprio chefe?(Não garantido)</label>
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-outline-danger me-md-2" type="submit">Enviar</button>
+                  </div>
+            </form>
+        </div>
+      </div>
+
+      <footer>
+        <span>
+      <a href="https://www.youtube.com/@QOTSA" target="_blank"> <i class="fa-brands fa-youtube"></i></a>
+      <a href="https://open.spotify.com/intl-es/artist/4pejUc4iciQfgdX6OKulQn" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+      <a href="https://www.facebook.com/QOTSA/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://twitter.com/qotsa?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.instagram.com/queensofthestoneage/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </span>
+      <br>
+
+      Powered by DSY Delopments &copy;
+
+   </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
